@@ -1,6 +1,6 @@
 # **IFTD: Image Feature Triangle Descriptor for Loop Detection in Driving Scenes**
 # **1. Introduction**
-**iftd_detector** In this work, we propose a fast and robust Image Feature Triangle Descriptor (IFTD) based on the STD method, aimed at improving the efficiency and accuracy of place recognition in driving scenarios. We extract keypoints from BEV projection image of point cloud and construct these keypoints into triangle descriptors. By matching these feature triangles, we achieved precise place recognition and calculated the 4-DOF pose estimation between two keyframes. Furthermore, we employ image similarity inspection to perform the final place recognition. Experimental results on three public datasets demonstrate that our IFTD can achieve greater robustness and accuracy than state-of-the-art methods with low computational overhead.
+**IFTD_detector** In this work, we propose a fast and robust Image Feature Triangle Descriptor (IFTD) based on the STD method, aimed at improving the efficiency and accuracy of place recognition in driving scenarios. We extract keypoints from BEV projection image of point cloud and construct these keypoints into triangle descriptors. By matching these feature triangles, we achieved precise place recognition and calculated the 4-DOF pose estimation between two keyframes. Furthermore, we employ image similarity inspection to perform the final place recognition. Experimental results on three public datasets demonstrate that our IFTD can achieve greater robustness and accuracy than state-of-the-art methods with low computational overhead.
 
   
 
@@ -47,7 +47,7 @@ cd IFTD/src
 ### 2.3 Clone the directory and build
 
 ```bash
-git clone xxxxx.git
+git clone https://github.com/EinsTian1/iftd.git
 cd ..
 catkin_make
 ```
