@@ -39,14 +39,14 @@ Our preprint version is now available on **arxiv**:
 
 ### 2.2 Create ROS workspace
 
-```bash
+```
 mkdir -p ~/IFTD/src
 cd IFTD/src
 ```
 
 ### 2.3 Clone the directory and build
 
-```bash
+```
 git clone https://github.com/EinsTian1/iftd.git
 cd ..
 catkin_make
@@ -81,7 +81,6 @@ First, you should modify the **demo_kitti.launch** file
 
 Then go to the workspace of **IFTD** and open a terminals, type the following command in terminal :
 ```
-bash
 cd IFTD
 source devel/setup.bash
 roslaunch iftd_detection demo_kitti.launch
@@ -94,7 +93,6 @@ First, you should modify the **demo_mulran.launch** file
 
 Then go to the workspace of **IFTD** and open a terminals, type the following command in terminal :
 ```
-bash
 cd IFTD
 source devel/setup.bash
 roslaunch iftd_detection demo_mulran.launch
@@ -106,7 +104,7 @@ First, you should modify the **demo_nclt.launch** file
 - Set the **pose_path** to your local path
 
 Then go to the workspace of **IFTD** and open a terminals, type the following command in terminal :
-```bash
+```
 cd IFTD
 source devel/setup.bash
 roslaunch iftd_detection demo_nclt.launch
