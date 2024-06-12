@@ -78,7 +78,6 @@ Noted:
 First, you should modify the **demo_kitti.launch** file
 - Set the **lidar_path** to your local path
 - Set the **pose_path** to your local path
-```
 
 Then go to the workspace of **IFTD** and open a terminals, type the following command in terminal :
 ```
@@ -92,10 +91,10 @@ roslaunch iftd_detection demo_kitti.launch
 First, you should modify the **demo_mulran.launch** file
 - Set the **lidar_path** to your local path
 - Set the **pose_path** to your local path
-```
 
 Then go to the workspace of **IFTD** and open a terminals, type the following command in terminal :
-```bash
+```
+bash
 cd IFTD
 source devel/setup.bash
 roslaunch iftd_detection demo_mulran.launch
@@ -105,7 +104,6 @@ roslaunch iftd_detection demo_mulran.launch
 First, you should modify the **demo_nclt.launch** file
 - Set the **lidar_path** to your local path
 - Set the **pose_path** to your local path
-```
 
 Then go to the workspace of **IFTD** and open a terminals, type the following command in terminal :
 ```bash
