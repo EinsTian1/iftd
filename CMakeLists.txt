@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD 14)
 SET(CMAKE_BUILD_TYPE "Release")
-set(Ceres_DIR /home/lang/tools/ceres-2.1.0/lib/cmake/Ceres)
 
 message("Current CPU archtecture: ${CMAKE_SYSTEM_PROCESSOR}")
 if(CMAKE_SYSTEM_PROCESSOR MATCHES "(x86)|(X86)|(amd64)|(AMD64)" )
