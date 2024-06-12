@@ -81,7 +81,8 @@ First, you should modify the **demo_kitti.launch** file
 ```
 
 Then go to the workspace of **IFTD** and open a terminals, type the following command in terminal :
-```bash
+```
+bash
 cd IFTD
 source devel/setup.bash
 roslaunch iftd_detection demo_kitti.launch
