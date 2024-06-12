@@ -61,7 +61,7 @@ Since this repo does not implement any method (i.e., LOAM, LIO, etc) for solving
 - For the ***Nclt dataset*** (i.e., our Example-1), we read the raw scan data with suffix *".bin"*. These raw LiDAR scan data can be downloaded from the [Kitti Odometry benchmark website](https://www.cvlibs.net/datasets/kitti/eval_odometry.php).
 - 
 ### **2.5.2. Point cloud registration pose**
-In the [poses file](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/ycj1_connect_hku_hk/EgnGX4jC2zxDi-45YCfbioEBpPCfBVxa2LcrE-90oL4u_A?e=Lb4Yvv), the poses for LiDAR point cloud registration are given in the following data format:
+In the poses file, the poses for LiDAR point cloud registration are given in the following data format:
 ```
 Timestamp pos_x pos_y pos_z quat_x quat_y quat_z quat_w
 ```
@@ -112,3 +112,15 @@ cd IFTD
 source devel/setup.bash
 roslaunch iftd_detection demo_nclt.launch
 ```
+
+## Citation
+
+If you use our work in your research project, please consider citing:
+
+```
+xxxxxx
+```
+
+## Acknowledgments
+
+Thanks for [STD](https://github.com/hku-mars/STD).
