@@ -57,8 +57,8 @@ Since this repo does not implement any method (i.e., LOAM, LIO, etc) for solving
 
 ### **2.5.1. LiDAR Point cloud data**
 - For the ***Kitti dataset*** (i.e., our Example-1), we read the raw scan data with suffix *".bin"*. These raw LiDAR scan data can be downloaded from the [Kitti Odometry benchmark website](https://www.cvlibs.net/datasets/kitti/eval_odometry.php).
-- For the ***Mulran dataset*** (i.e., our Example-1), we read the raw scan data with suffix *".bin"*. These raw LiDAR scan data can be downloaded from the [Kitti Odometry benchmark website](https://www.cvlibs.net/datasets/kitti/eval_odometry.php).
-- For the ***Nclt dataset*** (i.e., our Example-1), we read the raw scan data with suffix *".bin"*. These raw LiDAR scan data can be downloaded from the [Kitti Odometry benchmark website](https://www.cvlibs.net/datasets/kitti/eval_odometry.php).
+- For the ***Mulran dataset*** (i.e., our Example-1), we read the raw scan data with suffix *".bin"*. These raw LiDAR scan data can be downloaded from the [Mulran Dataset website](https://sites.google.com/view/mulran-pr/home).
+- For the ***Nclt dataset*** (i.e., our Example-1), we read the raw scan data with suffix *".bin"*. These raw LiDAR scan data can be downloaded from the [NCLT Dataset website](http://robots.engin.umich.edu/nclt/).
 - 
 ### **2.5.2. Point cloud registration pose**
 In the poses file, the poses for LiDAR point cloud registration are given in the following data format:
@@ -73,7 +73,7 @@ Noted:
 **Please create a folder named "output" in "xxxx" folder before running.** When **IFTD** is running, the result of loop closure is recorded in real time in the **loop.txt** located in the **output folder**.
 
 
-##  **3.1 Run on [*KITTI*](xxxxx)**
+##  **3.1 Run on [*KITTI*](https://www.cvlibs.net/datasets/kitti/eval_odometry.php)**
 
 First, you should modify the **demo_kitti.launch** file
 - Set the **lidar_path** to your local path
@@ -86,7 +86,7 @@ cd IFTD
 source devel/setup.bash
 roslaunch iftd_detection demo_kitti.launch
 ```
-##  **3.2 Run on [*Mulran*](xxxxx)**
+##  **3.2 Run on [*Mulran*](https://sites.google.com/view/mulran-pr/home)**
 
 First, you should modify the **demo_mulran.launch** file
 - Set the **lidar_path** to your local path
@@ -99,7 +99,7 @@ cd IFTD
 source devel/setup.bash
 roslaunch iftd_detection demo_mulran.launch
 ```
-##  **3.3 Run on [*NCLT*](xxxxx)**
+##  **3.3 Run on [*NCLT*](http://robots.engin.umich.edu/nclt/)**
 
 First, you should modify the **demo_nclt.launch** file
 - Set the **lidar_path** to your local path
