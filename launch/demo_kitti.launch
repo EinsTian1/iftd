@@ -1,0 +1,22 @@
+<launch>
+<!-- Launch file for Livox AVIA LiDAR -->
+
+  <arg name="rviz" default="true" />
+  <rosparam command="load" file="$(find iftd_detector)/config/config_kitti.yaml" />
+
+  <node 
+		pkg="iftd_detector" 
+		type="place_recognition_kitti" 
+		name="place_recognition_kitti" 
+		output="screen" 
+	/>
+
+  <param name="lidar_path" type="string" value = "/home/lang/docker_20.04_data/kitti/08/velodyne_bin/"/>
+  <param name="pose_path" type="string" value = "/home/lang/data/KITTI_gt/KITTI_poses/kitti08.txt"/>
+  <param name="output_path" type="string" value="$(find iftd_detector)/output"/>
+
+  <group if="$(arg rviz)">
+    <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d $(find iftd_detector)/rviz_cfg/demo.rviz" />
+  </group>
+
+</launch>

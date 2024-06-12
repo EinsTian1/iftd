@@ -1,0 +1,34 @@
+# pre process
+ds_size: 0.25
+
+#bin timestamp
+bin_timestamp: 4  # 1 for s, 2 for ms, 3 for us, 4 for ns 
+
+# Bev Image
+BEV_X_NUM: 400
+BEV_Y_NUM: 400
+BEV_X_MAX: 100
+BEV_Y_MAX: 100
+lidar_height: 1.5
+height_bin: 0.3
+
+#
+image_quartity: 0.1
+Hamming_distance: 10
+
+# std descriptor
+descriptor_near_num: 15
+descriptor_min_len: 2
+descriptor_max_len: 50
+std_side_resolution: 0.2
+
+# candidate search
+skip_near_num: 50
+candidate_num: 50
+sub_frame_num: 5
+vertex_diff_threshold: 0.4
+rough_dis_threshold: 0.01
+image_reseize: 20 #20
+distance_threshold: 15
+image_threshold: 0.2
+

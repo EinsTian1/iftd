@@ -1,0 +1,25 @@
+<launch>
+<!-- Launch file for Livox AVIA LiDAR -->
+
+  <arg name="rviz" default="true" />
+  <rosparam command="load" file="$(find iftd_detector)/config/config_mulran.yaml" />
+  <node 
+		pkg="iftd_detector" 
+		type="place_recognition_mulran" 
+		name="place_recognition_mulran" 
+		output="screen" 
+	/>
+  <!-- <param name="lidar_path" type="string" value = "/home/lang/docker_20.04_data/mulran/DCC03/Ouster/"/> -->
+  <!-- <param name="pose_path" type="string" value = "/home/lang/docker_20.04_data/mulran/fast-lio_pose/DCC03.txt"/> -->
+  <!-- <param name="lidar_path" type="string" value = "/home/lang/docker_20.04_data/mulran/KAIST03/Ouster/"/> -->
+  <!-- <param name="pose_path" type="string" value = "/home/lang/docker_20.04_data/mulran/fast-lio_pose/KAIST03.txt"/> -->
+  <param name="lidar_path" type="string" value = "/home/lang/docker_20.04_data/mulran/Riverside03/Ouster/"/>
+  <param name="pose_path" type="string" value = "/home/lang/docker_20.04_data/mulran/fast-lio_pose/Riverside03.txt"/>
+  <!-- <param name="pose_path" type="string" value = "/home/lang/data/MulRan/DCC01/GT.txt"/> -->
+
+
+  <group if="$(arg rviz)">
+    <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d $(find iftd_detector)/rviz_cfg/demo.rviz" />
+  </group>
+
+</launch>
